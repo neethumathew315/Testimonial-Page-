@@ -39,16 +39,14 @@
 
       .header-section .logo {
         display: block;
-        width: 40px;
-        height: 40px;
+        width: 49px;
+        height: 49px;
         margin: 2rem 0 1.5rem 0;
       }
 
       .logo img{
-        width: 40px;
-        height: 40px;
         background-color: #ad9d3e;
-        padding: 0.4rem;
+        padding: 0.9rem;
         border-radius: 50%;
       }
 
@@ -60,7 +58,7 @@
 
       .header-section p{
         font-size: 1.26rem;
-        line-height: 1.90rem;
+        line-height: 1.9rem;
         color: #5c616d;
         margin-bottom: 0.98rem;
       }
@@ -78,6 +76,11 @@
         font-size: 0.9rem;
         color: #5c616d;
         margin-bottom: 8px;
+      }
+      
+      .checklist img {
+        width: 20px;
+        height: 20px;
       }
 
       .testimonials{
@@ -99,7 +102,7 @@
 
       .review-header{
         display: flex;
-        flex-direction: row;
+        align-items: center;
         gap: 1.5rem;
         margin-bottom: 0.98rem;
       }
@@ -128,12 +131,137 @@
       .author-info a {
         text-decoration: none;
       }
+
+
+      @media (min-width: 768px) {
+        .container {
+          max-width: 1024px;
+          width: 100%;
+          padding: 1.5rem 3rem 2rem 3rem;
+        }
+
+      .header-section h1{
+        font-size: 2.7rem;
+      }
+
+      .header-section p{
+        font-size: 1.39rem;
+        line-height: 2.3rem;
+      }
+
+      .checklist img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .checklist li{
+        font-size: 1.2rem;
+        margin-bottom: 1.25rem;
+      }
+      .testimonials{
+        position: relative;
+      }
+
+      .review1{
+        width: 400px;
+        position: relative;
+        left: 40%;
+        padding: 2.2rem;
+      }
+
+      .review2{
+        width: 400px;
+        position: relative;
+        left: 10%;
+        padding: 2.2rem;
+      }
+
+      .review1 p,
+      .review2 p{
+        font-size: 1.3rem;
+      }
+        
+      }
+
+
+      @media (min-width: 1351px) {
+
+    .container {
+      max-width: 1350px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+      padding-top: 8.5rem;
+      margin: 0 auto;
+    }
+
+    .text-content{
+      width: 600px;
+    }
+
+      .header-section .logo {
+        margin: 0 0 0.5rem 0;
+      }
+
+      .logo img{
+        padding: 0.5rem;
+      }
+
+      .header-section h1{
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+      }
+
+      .header-section p{
+        font-size: 1.55rem;
+        line-height: 2.3rem;
+        margin-bottom: 1.98rem;
+      }
+
+      .checklist img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .checklist li{
+        font-size: 1.2rem;
+        margin-bottom: 1.25rem;
+      }  
+
+      .testimonials{
+        position: relative;
+        gap: 0.1rem;
+      }
+
+      .review1 h2,
+      .review2 h2{
+        font-size: 1.2rem;
+        margin-bottom: 0.1rem;
+      }
+      .review1 p,
+      .review2 p{
+        font-size: 1.2rem;
+      }
+
+      .review1,
+      .review2{
+        padding: 1.8rem 2rem 1.8rem 2rem;
+      }
+      
+      .review-header{
+        margin-bottom: 0.4rem;
+      }
+      
+      }
+
     </style>
   </head>
   <body>
 
     <main class="container"  aria-labelledby="main-title">
-      <section class="header-section" aria-labelledby="reviewers-heading">
+      <div class="text-content">
+        <section class="header-section" aria-labelledby="reviewers-heading">
         <div class="logo">
           <img src="resources/Star_fill.svg" alt="Star icon for reviewers section">
         </div>
@@ -149,6 +277,8 @@
         </ul>
       </section>
 
+      </div>
+      
       <section class="testimonials" aria-labelledby="testimonials-title">
         <article class="review1" aria-labelledby="reviewer1-name">
           <div class="review-header">
